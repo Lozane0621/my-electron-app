@@ -24,11 +24,12 @@ module.exports = {
       name: '@electron-forge/publisher-github',
       config: {
         repository: {
-          owner: 'github-user-name',
-          name: 'github-repo-name',
+          owner: 'Lozane0621',
+          name: 'my-electron-app',
         },
         prerelease: false,
-        draft: true,
+        draft: false,
+        authToken:'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'
       },
     },
   ],
