@@ -29,7 +29,7 @@ module.exports = {
         },
         prerelease: false,
         draft: false,
-        authToken:'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'
+        authToken:'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'
       },
     },
   ],
