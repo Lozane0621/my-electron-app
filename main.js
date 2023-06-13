@@ -31,3 +31,6 @@ app.on("window-all-closed", () => {
     app.quit();
   }
 });
+
+
+require('update-electron-app')()
