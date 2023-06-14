@@ -15,7 +15,7 @@ module.exports = {
       platforms: ['win32'],
       config: (arch) => ({
         name: 'want-want-app',
-        authors: '任罗振',
+        authors: 'shinyinfo',
         exe: 'want-want-app.exe',
         noMsi: true,
         setupExe: `want-want-app-${version}-win32-${arch}-setup.exe`,
@@ -39,7 +39,7 @@ module.exports = {
       name: '@electron-forge/maker-wix',
       config: {
         language: 1033,
-        manufacturer: 'Shinyinfo Technology Co., Ltd.',
+        manufacturer: 'shinyinfo',
         icon: path.resolve(iconDir, 'wantwant.ico')
       }
     },
@@ -63,7 +63,7 @@ module.exports = {
         },
         prerelease: false,
         draft: false,
-        authToken:'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'
+        authToken:'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'
       },
     },
   ],
