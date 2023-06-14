@@ -1,7 +1,7 @@
 {
   "name": "want-want-app",
   "version": "1.0.9",
-  "description": "圣一信息客户端APP",
+  "description": "Shiyinfo APP",
   "main": "main.js",
   "scripts": {
     "start": "electron-forge start",
