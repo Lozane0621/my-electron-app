@@ -74,7 +74,6 @@ function setupUpdates() {
     const updateApp = require('update-electron-app');
 
     updateApp({
-      repo: 'electron/fiddle',
       updateInterval: '1 hour',
     });
   }, 10000);
