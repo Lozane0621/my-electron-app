@@ -1,6 +1,6 @@
 {
-  "name": "my-electron-app",
-  "version": "1.0.5",
+  "name": "want-want-app",
+  "version": "1.0.8",
   "description": "Hello World",
   "main": "main.js",
   "scripts": {
@@ -22,11 +22,16 @@
   },
   "devDependencies": {
     "@electron-forge/cli": "^6.1.1",
+    "@electron-forge/maker-appx": "^6.1.1",
     "@electron-forge/maker-deb": "^6.1.1",
+    "@electron-forge/maker-dmg": "^6.1.1",
     "@electron-forge/maker-rpm": "^6.1.1",
     "@electron-forge/maker-squirrel": "^6.1.1",
+    "@electron-forge/maker-wix": "^6.1.1",
     "@electron-forge/maker-zip": "^6.1.1",
     "@electron-forge/publisher-github": "^6.1.1",
-    "electron": "^24.2.0"
+    "electron": "^24.2.0",
+    "electron-winstaller": "^5.1.0",
+    "electron-wix-msi": "^5.0.0"
   }
 }

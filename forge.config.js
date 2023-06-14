@@ -1,10 +1,26 @@
+const path = require('path');
+const packageJson = require('./package.json');
+const { version } = packageJson;
+const iconDir = path.resolve(__dirname, 'assets', 'icons');
+
 module.exports = {
-  packagerConfig: {},
+  packagerConfig: {
+    asar: true,
+    icon: path.resolve(__dirname, 'assets', 'icons', 'wantwant'),
+  },
   rebuildConfig: {},
   makers: [
     {
       name: '@electron-forge/maker-squirrel',
-      config: {},
+      platforms: ['win32'],
+      config: (arch) => ({
+        name: 'want-want-app',
+        authors: '任罗振',
+        exe: 'want-want-app.exe',
+        noMsi: true,
+        setupExe: `want-want-app-${version}-win32-${arch}-setup.exe`,
+        setupIcon: path.resolve(iconDir, 'wantwant.ico')
+      }),
     },
     {
       name: '@electron-forge/maker-zip',
@@ -12,12 +28,29 @@ module.exports = {
     },
     {
       name: '@electron-forge/maker-deb',
-      config: {},
+      platforms: ['linux'],
     },
     {
       name: '@electron-forge/maker-rpm',
-      config: {},
+      platforms: ['linux'],
     },
+    {
+      // 注意：一定要用cmd权限运行，否则会报错
+      name: '@electron-forge/maker-wix',
+      config: {
+        language: 1033,
+        manufacturer: 'My Awesome Company'
+      }
+    },
+    {
+      name: '@electron-forge/maker-appx'
+    },
+    {
+      name: '@electron-forge/maker-dmg',
+      config: {
+        format: 'ULFO'
+      }
+    }
   ],
   publishers: [
     {
@@ -29,8 +62,11 @@ module.exports = {
         },
         prerelease: false,
         draft: false,
-        authToken:'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'
+        authToken:'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'
       },
     },
   ],
 };
+
+
+
