@@ -39,7 +39,8 @@ module.exports = {
       name: '@electron-forge/maker-wix',
       config: {
         language: 1033,
-        manufacturer: 'My Awesome Company'
+        manufacturer: 'Shinyinfo Technology Co., Ltd.',
+        icon: path.resolve(iconDir, 'wantwant.ico')
       }
     },
     {

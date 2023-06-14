@@ -74,7 +74,7 @@ function setupUpdates() {
     const updateApp = require('update-electron-app');
 
     updateApp({
-      updateInterval: '1 hour',
+      updateInterval: '5 minutes',
     });
   }, 10000);
 }
